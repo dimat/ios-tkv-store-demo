@@ -1,0 +1,752 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AD052EF29C4AC7800C74899 /* TKVStoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD052EE29C4AC7800C74899 /* TKVStoreApp.swift */; };
+		0AD052F129C4AC7800C74899 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD052F029C4AC7800C74899 /* ContentView.swift */; };
+		0AD052F329C4AC7900C74899 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AD052F229C4AC7900C74899 /* Assets.xcassets */; };
+		0AD052F629C4AC7900C74899 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AD052F529C4AC7900C74899 /* Preview Assets.xcassets */; };
+		0AD0531929C4B9E300C74899 /* ProgramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0531829C4B9E300C74899 /* ProgramView.swift */; };
+		0AD0531C29C4D44D00C74899 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0531B29C4D44D00C74899 /* Storage.swift */; };
+		0AD0531E29C4D47600C74899 /* InMemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0531D29C4D47600C74899 /* InMemoryStorage.swift */; };
+		0AD0532029C4D4AD00C74899 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0531F29C4D4AD00C74899 /* Program.swift */; };
+		0AD0532229C4D4DE00C74899 /* CommandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0532129C4D4DE00C74899 /* CommandView.swift */; };
+		0AD0532429C4D51D00C74899 /* NewInstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0532329C4D51D00C74899 /* NewInstructionView.swift */; };
+		0AD0532729C4D55600C74899 /* PrograrmExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0532629C4D55600C74899 /* PrograrmExecutor.swift */; };
+		0AD0532929C4D56A00C74899 /* ExecutionLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0532829C4D56A00C74899 /* ExecutionLogView.swift */; };
+		0AD0532C29C4D63300C74899 /* InMemoryStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0532B29C4D63300C74899 /* InMemoryStorageTests.swift */; };
+		0AD0532E29C4E3AF00C74899 /* ProgramExecutorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0532D29C4E3AF00C74899 /* ProgramExecutorTests.swift */; };
+		0AD0533029C4E63100C74899 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0AD0532F29C4E63100C74899 /* README.md */; };
+		0AD0533229C4FCA500C74899 /* DevelopmentEnviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0533129C4FCA500C74899 /* DevelopmentEnviroment.swift */; };
+		0AD0533429C4FDC800C74899 /* DevelopmentEnvironmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0533329C4FDC800C74899 /* DevelopmentEnvironmentTests.swift */; };
+		0AD0533629C4FEA700C74899 /* MockStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0533529C4FEA700C74899 /* MockStorage.swift */; };
+		0AD0533829C50D2300C74899 /* NewInstructionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0533729C50D2300C74899 /* NewInstructionViewModel.swift */; };
+		0AD0533A29C50D3600C74899 /* NewInstructionViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0533929C50D3600C74899 /* NewInstructionViewModelTests.swift */; };
+		0AD0534A29C5133600C74899 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 0AD0534929C5133600C74899 /* SnapshotTesting */; };
+		0AD0534D29C5137200C74899 /* PreviewSnapshots in Frameworks */ = {isa = PBXBuildFile; productRef = 0AD0534C29C5137200C74899 /* PreviewSnapshots */; };
+		0AD0534F29C514C200C74899 /* SnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0534E29C514C200C74899 /* SnapshotTests.swift */; };
+		0AD0535229C5150100C74899 /* PreviewSnapshotsTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 0AD0535129C5150100C74899 /* PreviewSnapshotsTesting */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0AD052FC29C4AC7A00C74899 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AD052E329C4AC7800C74899 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AD052EA29C4AC7800C74899;
+			remoteInfo = TKVStore;
+		};
+		0AD0534329C5132400C74899 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AD052E329C4AC7800C74899 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AD052EA29C4AC7800C74899;
+			remoteInfo = TKVStore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0AD052EB29C4AC7800C74899 /* TKVStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TKVStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AD052EE29C4AC7800C74899 /* TKVStoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKVStoreApp.swift; sourceTree = "<group>"; };
+		0AD052F029C4AC7800C74899 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0AD052F229C4AC7900C74899 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0AD052F529C4AC7900C74899 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0AD052FB29C4AC7A00C74899 /* TKVStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TKVStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AD0531829C4B9E300C74899 /* ProgramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramView.swift; sourceTree = "<group>"; };
+		0AD0531B29C4D44D00C74899 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		0AD0531D29C4D47600C74899 /* InMemoryStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryStorage.swift; sourceTree = "<group>"; };
+		0AD0531F29C4D4AD00C74899 /* Program.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
+		0AD0532129C4D4DE00C74899 /* CommandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandView.swift; sourceTree = "<group>"; };
+		0AD0532329C4D51D00C74899 /* NewInstructionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewInstructionView.swift; sourceTree = "<group>"; };
+		0AD0532629C4D55600C74899 /* PrograrmExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrograrmExecutor.swift; sourceTree = "<group>"; };
+		0AD0532829C4D56A00C74899 /* ExecutionLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionLogView.swift; sourceTree = "<group>"; };
+		0AD0532B29C4D63300C74899 /* InMemoryStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryStorageTests.swift; sourceTree = "<group>"; };
+		0AD0532D29C4E3AF00C74899 /* ProgramExecutorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramExecutorTests.swift; sourceTree = "<group>"; };
+		0AD0532F29C4E63100C74899 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0AD0533129C4FCA500C74899 /* DevelopmentEnviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentEnviroment.swift; sourceTree = "<group>"; };
+		0AD0533329C4FDC800C74899 /* DevelopmentEnvironmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentEnvironmentTests.swift; sourceTree = "<group>"; };
+		0AD0533529C4FEA700C74899 /* MockStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStorage.swift; sourceTree = "<group>"; };
+		0AD0533729C50D2300C74899 /* NewInstructionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewInstructionViewModel.swift; sourceTree = "<group>"; };
+		0AD0533929C50D3600C74899 /* NewInstructionViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewInstructionViewModelTests.swift; sourceTree = "<group>"; };
+		0AD0533F29C5132400C74899 /* TKVStoreSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TKVStoreSnapshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AD0534E29C514C200C74899 /* SnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0AD052E829C4AC7800C74899 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AD0534D29C5137200C74899 /* PreviewSnapshots in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AD052F829C4AC7A00C74899 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AD0533C29C5132400C74899 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AD0535229C5150100C74899 /* PreviewSnapshotsTesting in Frameworks */,
+				0AD0534A29C5133600C74899 /* SnapshotTesting in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AD052E229C4AC7800C74899 = {
+			isa = PBXGroup;
+			children = (
+				0AD0532F29C4E63100C74899 /* README.md */,
+				0AD052ED29C4AC7800C74899 /* TKVStore */,
+				0AD052FE29C4AC7A00C74899 /* TKVStoreTests */,
+				0AD0534029C5132400C74899 /* TKVStoreSnapshotTests */,
+				0AD052EC29C4AC7800C74899 /* Products */,
+				0AD0535029C5150100C74899 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0AD052EC29C4AC7800C74899 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0AD052EB29C4AC7800C74899 /* TKVStore.app */,
+				0AD052FB29C4AC7A00C74899 /* TKVStoreTests.xctest */,
+				0AD0533F29C5132400C74899 /* TKVStoreSnapshotTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0AD052ED29C4AC7800C74899 /* TKVStore */ = {
+			isa = PBXGroup;
+			children = (
+				0AD0532A29C4D5F700C74899 /* Editor */,
+				0AD0532529C4D54800C74899 /* Program */,
+				0AD0531A29C4D36100C74899 /* Storage */,
+				0AD052EE29C4AC7800C74899 /* TKVStoreApp.swift */,
+				0AD052F029C4AC7800C74899 /* ContentView.swift */,
+				0AD052F229C4AC7900C74899 /* Assets.xcassets */,
+				0AD052F429C4AC7900C74899 /* Preview Content */,
+			);
+			path = TKVStore;
+			sourceTree = "<group>";
+		};
+		0AD052F429C4AC7900C74899 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0AD052F529C4AC7900C74899 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0AD052FE29C4AC7A00C74899 /* TKVStoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				0AD0532B29C4D63300C74899 /* InMemoryStorageTests.swift */,
+				0AD0532D29C4E3AF00C74899 /* ProgramExecutorTests.swift */,
+				0AD0533329C4FDC800C74899 /* DevelopmentEnvironmentTests.swift */,
+				0AD0533929C50D3600C74899 /* NewInstructionViewModelTests.swift */,
+			);
+			path = TKVStoreTests;
+			sourceTree = "<group>";
+		};
+		0AD0531A29C4D36100C74899 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				0AD0531B29C4D44D00C74899 /* Storage.swift */,
+				0AD0531D29C4D47600C74899 /* InMemoryStorage.swift */,
+				0AD0533529C4FEA700C74899 /* MockStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		0AD0532529C4D54800C74899 /* Program */ = {
+			isa = PBXGroup;
+			children = (
+				0AD0531F29C4D4AD00C74899 /* Program.swift */,
+				0AD0532629C4D55600C74899 /* PrograrmExecutor.swift */,
+			);
+			path = Program;
+			sourceTree = "<group>";
+		};
+		0AD0532A29C4D5F700C74899 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				0AD0535329C517FC00C74899 /* NewInstructionView */,
+				0AD0531829C4B9E300C74899 /* ProgramView.swift */,
+				0AD0532129C4D4DE00C74899 /* CommandView.swift */,
+				0AD0532829C4D56A00C74899 /* ExecutionLogView.swift */,
+				0AD0533129C4FCA500C74899 /* DevelopmentEnviroment.swift */,
+			);
+			path = Editor;
+			sourceTree = "<group>";
+		};
+		0AD0534029C5132400C74899 /* TKVStoreSnapshotTests */ = {
+			isa = PBXGroup;
+			children = (
+				0AD0534E29C514C200C74899 /* SnapshotTests.swift */,
+			);
+			path = TKVStoreSnapshotTests;
+			sourceTree = "<group>";
+		};
+		0AD0535029C5150100C74899 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0AD0535329C517FC00C74899 /* NewInstructionView */ = {
+			isa = PBXGroup;
+			children = (
+				0AD0532329C4D51D00C74899 /* NewInstructionView.swift */,
+				0AD0533729C50D2300C74899 /* NewInstructionViewModel.swift */,
+			);
+			path = NewInstructionView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0AD052EA29C4AC7800C74899 /* TKVStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AD0530F29C4AC7A00C74899 /* Build configuration list for PBXNativeTarget "TKVStore" */;
+			buildPhases = (
+				0AD052E729C4AC7800C74899 /* Sources */,
+				0AD052E829C4AC7800C74899 /* Frameworks */,
+				0AD052E929C4AC7800C74899 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TKVStore;
+			packageProductDependencies = (
+				0AD0534C29C5137200C74899 /* PreviewSnapshots */,
+			);
+			productName = TKVStore;
+			productReference = 0AD052EB29C4AC7800C74899 /* TKVStore.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0AD052FA29C4AC7A00C74899 /* TKVStoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AD0531229C4AC7A00C74899 /* Build configuration list for PBXNativeTarget "TKVStoreTests" */;
+			buildPhases = (
+				0AD052F729C4AC7A00C74899 /* Sources */,
+				0AD052F829C4AC7A00C74899 /* Frameworks */,
+				0AD052F929C4AC7A00C74899 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AD052FD29C4AC7A00C74899 /* PBXTargetDependency */,
+			);
+			name = TKVStoreTests;
+			productName = TKVStoreTests;
+			productReference = 0AD052FB29C4AC7A00C74899 /* TKVStoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0AD0533E29C5132400C74899 /* TKVStoreSnapshotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AD0534529C5132400C74899 /* Build configuration list for PBXNativeTarget "TKVStoreSnapshotTests" */;
+			buildPhases = (
+				0AD0533B29C5132400C74899 /* Sources */,
+				0AD0533C29C5132400C74899 /* Frameworks */,
+				0AD0533D29C5132400C74899 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AD0534429C5132400C74899 /* PBXTargetDependency */,
+			);
+			name = TKVStoreSnapshotTests;
+			packageProductDependencies = (
+				0AD0534929C5133600C74899 /* SnapshotTesting */,
+				0AD0535129C5150100C74899 /* PreviewSnapshotsTesting */,
+			);
+			productName = TKVStoreSnapshotTests;
+			productReference = 0AD0533F29C5132400C74899 /* TKVStoreSnapshotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0AD052E329C4AC7800C74899 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					0AD052EA29C4AC7800C74899 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					0AD052FA29C4AC7A00C74899 = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+						TestTargetID = 0AD052EA29C4AC7800C74899;
+					};
+					0AD0533E29C5132400C74899 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 0AD052EA29C4AC7800C74899;
+					};
+				};
+			};
+			buildConfigurationList = 0AD052E629C4AC7800C74899 /* Build configuration list for PBXProject "TKVStore" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0AD052E229C4AC7800C74899;
+			packageReferences = (
+				0AD0534829C5133600C74899 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+				0AD0534B29C5137200C74899 /* XCRemoteSwiftPackageReference "swiftui-preview-snapshots" */,
+			);
+			productRefGroup = 0AD052EC29C4AC7800C74899 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0AD052EA29C4AC7800C74899 /* TKVStore */,
+				0AD052FA29C4AC7A00C74899 /* TKVStoreTests */,
+				0AD0533E29C5132400C74899 /* TKVStoreSnapshotTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0AD052E929C4AC7800C74899 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AD0533029C4E63100C74899 /* README.md in Resources */,
+				0AD052F629C4AC7900C74899 /* Preview Assets.xcassets in Resources */,
+				0AD052F329C4AC7900C74899 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AD052F929C4AC7A00C74899 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AD0533D29C5132400C74899 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0AD052E729C4AC7800C74899 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AD0533829C50D2300C74899 /* NewInstructionViewModel.swift in Sources */,
+				0AD0531E29C4D47600C74899 /* InMemoryStorage.swift in Sources */,
+				0AD052F129C4AC7800C74899 /* ContentView.swift in Sources */,
+				0AD0532429C4D51D00C74899 /* NewInstructionView.swift in Sources */,
+				0AD0533629C4FEA700C74899 /* MockStorage.swift in Sources */,
+				0AD0532929C4D56A00C74899 /* ExecutionLogView.swift in Sources */,
+				0AD0533229C4FCA500C74899 /* DevelopmentEnviroment.swift in Sources */,
+				0AD0532029C4D4AD00C74899 /* Program.swift in Sources */,
+				0AD0532229C4D4DE00C74899 /* CommandView.swift in Sources */,
+				0AD0531C29C4D44D00C74899 /* Storage.swift in Sources */,
+				0AD0532729C4D55600C74899 /* PrograrmExecutor.swift in Sources */,
+				0AD052EF29C4AC7800C74899 /* TKVStoreApp.swift in Sources */,
+				0AD0531929C4B9E300C74899 /* ProgramView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AD052F729C4AC7A00C74899 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AD0533A29C50D3600C74899 /* NewInstructionViewModelTests.swift in Sources */,
+				0AD0533429C4FDC800C74899 /* DevelopmentEnvironmentTests.swift in Sources */,
+				0AD0532C29C4D63300C74899 /* InMemoryStorageTests.swift in Sources */,
+				0AD0532E29C4E3AF00C74899 /* ProgramExecutorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AD0533B29C5132400C74899 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AD0534F29C514C200C74899 /* SnapshotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0AD052FD29C4AC7A00C74899 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AD052EA29C4AC7800C74899 /* TKVStore */;
+			targetProxy = 0AD052FC29C4AC7A00C74899 /* PBXContainerItemProxy */;
+		};
+		0AD0534429C5132400C74899 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AD052EA29C4AC7800C74899 /* TKVStore */;
+			targetProxy = 0AD0534329C5132400C74899 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0AD0530D29C4AC7A00C74899 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0AD0530E29C4AC7A00C74899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0AD0531029C4AC7A00C74899 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TKVStore/Preview Content\"";
+				DEVELOPMENT_TEAM = 3987376X79;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmatyukhin.TKVStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0AD0531129C4AC7A00C74899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TKVStore/Preview Content\"";
+				DEVELOPMENT_TEAM = 3987376X79;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmatyukhin.TKVStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0AD0531329C4AC7A00C74899 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3987376X79;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmatyukhin.TKVStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TKVStore.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TKVStore";
+			};
+			name = Debug;
+		};
+		0AD0531429C4AC7A00C74899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3987376X79;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmatyukhin.TKVStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TKVStore.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TKVStore";
+			};
+			name = Release;
+		};
+		0AD0534629C5132400C74899 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3987376X79;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmatyukhin.TKVStoreSnapshotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TKVStore.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TKVStore";
+			};
+			name = Debug;
+		};
+		0AD0534729C5132400C74899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3987376X79;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmatyukhin.TKVStoreSnapshotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TKVStore.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TKVStore";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AD052E629C4AC7800C74899 /* Build configuration list for PBXProject "TKVStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AD0530D29C4AC7A00C74899 /* Debug */,
+				0AD0530E29C4AC7A00C74899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AD0530F29C4AC7A00C74899 /* Build configuration list for PBXNativeTarget "TKVStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AD0531029C4AC7A00C74899 /* Debug */,
+				0AD0531129C4AC7A00C74899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AD0531229C4AC7A00C74899 /* Build configuration list for PBXNativeTarget "TKVStoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AD0531329C4AC7A00C74899 /* Debug */,
+				0AD0531429C4AC7A00C74899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AD0534529C5132400C74899 /* Build configuration list for PBXNativeTarget "TKVStoreSnapshotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AD0534629C5132400C74899 /* Debug */,
+				0AD0534729C5132400C74899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0AD0534829C5133600C74899 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.11.0;
+			};
+		};
+		0AD0534B29C5137200C74899 /* XCRemoteSwiftPackageReference "swiftui-preview-snapshots" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/doordash-oss/swiftui-preview-snapshots";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0AD0534929C5133600C74899 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0AD0534829C5133600C74899 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+		0AD0534C29C5137200C74899 /* PreviewSnapshots */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0AD0534B29C5137200C74899 /* XCRemoteSwiftPackageReference "swiftui-preview-snapshots" */;
+			productName = PreviewSnapshots;
+		};
+		0AD0535129C5150100C74899 /* PreviewSnapshotsTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0AD0534B29C5137200C74899 /* XCRemoteSwiftPackageReference "swiftui-preview-snapshots" */;
+			productName = PreviewSnapshotsTesting;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0AD052E329C4AC7800C74899 /* Project object */;
+}
