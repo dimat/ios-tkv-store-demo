@@ -8,19 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var devEnvironment = DevelopmentEnviroment(executor: ProgramExecutor(storage: InMemoryStorage()))
-    @State var isEditorPresented = false
+    @State var path: [Program] = []
     
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $path) {
             List {
                 Section {
                     link(title: "Blank", instructions: [])
                 }
                 
                 Section("Samples") {
-                    
-                    
                     link(title: "Set and get a value", instructions: [
                         .set(key: "foo", value: "123"),
                         .get(key: "foo")
@@ -85,21 +82,20 @@ struct ContentView: View {
                     ])
                 }
             }
-            .navigationDestination(isPresented: $isEditorPresented) {
-                ProgramView(devEnvironment: devEnvironment)
+            .navigationDestination(for: Program.self) { program in
+                ProgramView(
+                    devEnvironment: DevelopmentEnviroment(
+                        executor: ProgramExecutor(storage: InMemoryStorage()),
+                        program: program))
             }
         }
     }
     
     @ViewBuilder
     private func link(title: String, instructions: [Instruction]) -> some View {
-        Button {
-            devEnvironment.program = .init(commands: instructions.map { Command(instruction: $0) } )
-            isEditorPresented = true
-        } label: {
+        NavigationLink(value: Program(commands: instructions.map { Command(instruction: $0) } )) {
             Text(title)
         }
-        .buttonStyle(.plain)
     }
 }
 

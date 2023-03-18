@@ -18,9 +18,9 @@ class DevelopmentEnviroment: ObservableObject {
     
     private var executor: any ProgramExecutorProtocol
     
-    init(executor: any ProgramExecutorProtocol) {
+    init(executor: any ProgramExecutorProtocol, program: Program = .init(commands: [])) {
         self.executor = executor
-        self.program = .init(commands: [])
+        self.program = program
     }
     
     func clearLogs() {

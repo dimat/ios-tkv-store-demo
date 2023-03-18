@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct Program {
+struct Program: Hashable {
     var commands: [Command]
 }

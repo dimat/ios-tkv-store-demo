@@ -23,7 +23,7 @@ extension Operation {
     }
 }
 
-enum Instruction: Equatable {
+enum Instruction: Equatable, Hashable {
     case set(key: String, value: String)
     case get(key: String)
     case delete(key: String)
@@ -47,7 +47,7 @@ extension Instruction {
     }
 }
 
-struct Command: Identifiable, Equatable {
+struct Command: Identifiable, Equatable, Hashable {
     let id: UUID
     var instruction: Instruction
     
